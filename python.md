@@ -30,3 +30,12 @@ for item in a_dict.items():
 props = { "user": "conni", "age": 42 }
 text = "the user {conni} is {age}".format(**props)
 ```
+
+### with context
+
+```python
+with open('output.txt', 'w') as file:
+  file.write('Hi there!')
+```
+
+=> calls __enter__() of entering and __exit__() on leaving the context
