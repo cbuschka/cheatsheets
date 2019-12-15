@@ -38,4 +38,4 @@ with open('output.txt', 'w') as file:
   file.write('Hi there!')
 ```
 
-=> calls __enter__() of entering and __exit__() on leaving the context
+=> calls ```__enter__()``` of entering and ```__exit__()``` on leaving the context
