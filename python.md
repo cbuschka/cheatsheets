@@ -39,3 +39,15 @@ with open('output.txt', 'w') as file:
 ```
 
 => calls ```__enter__()``` of entering and ```__exit__()``` on leaving the context
+
+### mocking
+
+```python
+from unittest.mock import MagicMock
+
+thing = ProductionClass()
+thing.method = MagicMock(return_value=3)
+```
+### mocking functions from imported modules
+[stackoverflow answer](https://stackoverflow.com/questions/16134281/python-mocking-a-function-from-an-imported-module)
+
