@@ -51,3 +51,22 @@ thing.method = MagicMock(return_value=3)
 ### mocking functions from imported modules
 [stackoverflow answer](https://stackoverflow.com/questions/16134281/python-mocking-a-function-from-an-imported-module)
 
+### parse json
+
+```python
+import json
+
+with open('file.json') as f:
+  data = json.load(f)
+```
+
+### rest client
+```python
+import requests
+
+resp = requests.get('https://todolist.example.com/tasks/')
+if resp.status_code != 200:
+  ...
+for todo_item in resp.json():
+  ...
+```
