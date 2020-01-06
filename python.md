@@ -34,11 +34,28 @@ text = "the user {conni} is {age}".format(**props)
 ### with context
 
 ```python
-with open('output.txt', 'w') as file:
+with open('output.txt', 'w') as file and with open('output.txt', 'w') as file2:
   file.write('Hi there!')
+  file2.write('Here I am.')
 ```
 
 => calls ```__enter__()``` of entering and ```__exit__()``` on leaving the context
+
+### managed context
+```python
+class MyResourceManager:
+  def __enter__(self):
+    return resource
+
+  def __exit__(self, type, value, traceback):
+    pass
+
+def get_rsc():
+  return MyResourceManager()
+
+with get_rsc() as r:
+  r.foo()
+```
 
 ### mocking
 
