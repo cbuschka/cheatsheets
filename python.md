@@ -107,3 +107,9 @@ MyType = ("MyType", (object), {x:1})
 my = MyType()
 print my.x
 ```
+
+### slicing
+```python
+as = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
+bs = as[1:6:2]
+```
