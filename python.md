@@ -100,3 +100,10 @@ def wrapped(f, x):
 def myfunc(x):
   print(x)
 ```
+
+### dynamic class
+```python
+MyType = ("MyType", (object), {x:1})
+my = MyType()
+print my.x
+```
