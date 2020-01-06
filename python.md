@@ -87,3 +87,16 @@ if resp.status_code != 200:
 for todo_item in resp.json():
   ...
 ```
+
+### decorator
+```python
+@decorator
+def wrapped(f, x):
+  def wrappedf(f, x):
+    return f(x)
+  return wrappedf
+
+@wrapped
+def myfunc(x):
+  print(x)
+```
