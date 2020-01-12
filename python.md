@@ -113,3 +113,10 @@ print my.x
 as = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
 bs = as[1:6:2]
 ```
+
+
+### func decorator
+[.python/func_decorator.py](./python/func_decorator.py)
+
+### class decorator
+[./python/class_decorator.py](./python/class_decorator.py)
