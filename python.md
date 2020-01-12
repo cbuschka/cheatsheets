@@ -115,8 +115,8 @@ bs = as[1:6:2]
 ```
 
 
-### func decorator
-[.python/func_decorator.py](./python/func_decorator.py)
+### function decorator
+[.python/function_decorator.py](./python/function_decorator.py)
 
 ### class decorator
 [./python/class_decorator.py](./python/class_decorator.py)
