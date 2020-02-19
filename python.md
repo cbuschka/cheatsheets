@@ -136,3 +136,21 @@ bs = as[1:6:2]
 ```
 path = os.path.join(os.path.dirname(__file__), 'my_file')
 ```
+
+### list to string
+
+```
+a = ["Geeks", "For", "Geeks"] 
+print(" ".join(a))
+```
+
+### returning multiple values
+```
+def giveit():
+  return 1, 2, 3, 4
+
+a, b, c, d = giveit()
+```
+
+### links
+[tipps and tricks](https://wiki.pythonde.pysv.org/Tipps%20und%20Tricks)
