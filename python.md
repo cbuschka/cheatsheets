@@ -120,3 +120,10 @@ bs = as[1:6:2]
 
 ### class decorator
 [./python/class_decorator.py](./python/class_decorator.py)
+
+### loading resources relative to current module file
+[stack overflow](https://stackoverflow.com/questions/1270951/how-to-refer-to-relative-paths-of-resources-when-working-with-a-code-repository)
+
+```
+path = os.path.join(os.path.dirname(__file__), 'my_file')
+```
